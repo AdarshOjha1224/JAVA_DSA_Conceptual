@@ -1,4 +1,4 @@
-public class CustomLinkedList<T> {
+public class LinkedList<T> {
 
     // 1. The Node Class
     // It is static because it doesn't need access to the outer class's instance variables.
@@ -15,7 +15,7 @@ public class CustomLinkedList<T> {
     private Node<T> head; // Points to the first node in the list
     private int size;     // Tracks the number of elements
 
-    public CustomLinkedList() {
+    public LinkedList() {
         this.head = null;
         this.size = 0;
     }
@@ -150,6 +150,7 @@ public class CustomLinkedList<T> {
         System.out.println("null");
     }
 
+
     // Get the size of the list (O(1) time complexity)
     public int getSize() {
         return size;
@@ -171,7 +172,7 @@ public class CustomLinkedList<T> {
     // MAIN METHOD TO DEMONSTRATE
     // ==========================================
     public static void main(String[] args) {
-        CustomLinkedList<String> list = new CustomLinkedList<>();
+        LinkedList<String> list = new LinkedList<>();
 
         System.out.println("1. Initial state:");
         list.printList();
