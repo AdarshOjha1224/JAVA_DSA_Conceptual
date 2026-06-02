@@ -12,19 +12,15 @@ public class MergeSort {
 
         int a1 = mid-left+1;
         int a2 = right-mid;
-
         int[] leftArray = new int[a1];
         int[] rightArray = new int[a2];
-
         for(int x = 0; x < a1 ; x++){
             leftArray[x] = arr[left+ x];
         }
         for(int x = 0; x < a2 ; x++){
             rightArray[x] = arr[mid+1+ x];
         }
-
         int i = 0 , j = 0 , k = left ;
-
         while(i<a1 && j<a2){
             if(leftArray[i] <= rightArray[j]){
                 arr[k] = leftArray[i];
@@ -47,7 +43,6 @@ public class MergeSort {
             k++;
         }
     }
-
     public static void main(String[] args) {
         int[] arr = {4,7,14,19,2,17,10,11,1};
         System.out.println("Before Sorting : ");
