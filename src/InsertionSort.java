@@ -1,7 +1,6 @@
 public class InsertionSort {
     public static void iSort(int[] nums){
         int n = nums.length;
-
         for(int i = 1 ; i < n ; i++){
             int key = nums[i];
             int j = i-1 ;
