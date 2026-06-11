@@ -19,10 +19,12 @@ public class bubbleSort {
         for(int ele : nums){
             System.out.print(ele + " ");
         }
+
         bSort(nums);
         System.out.println("\nAfter Sorting : ");
         for(int ele : nums){
             System.out.print(ele + " ");
         }
+
     }
 }
