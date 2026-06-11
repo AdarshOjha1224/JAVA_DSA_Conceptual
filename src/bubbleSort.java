@@ -12,6 +12,7 @@ public class bubbleSort {
         }
     }
 
+
     public static void main(String[] args) {
         int[] nums = {4,7,14,19,2,17,10,11,1};
         System.out.println("Before Sorting : ");
