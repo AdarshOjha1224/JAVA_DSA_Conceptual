@@ -17,7 +17,7 @@ public class Queue {
     }
 
     public int dequeue(){
-        if(!isEmpty()) {
+        if(isEmpty()) {
             throw new RuntimeException("Queue is Empty");
         }
         int data = arr[front];
@@ -27,14 +27,14 @@ public class Queue {
     }
 
     public int peek(){
-        if(!isEmpty()) {
+        if(isEmpty()) {
             throw new RuntimeException("Queue is Empty");
         }
         return arr[front];
     }
 
     public boolean isFull(){
-        return size==4;
+        return size==5;
     }
 
     public boolean isEmpty(){
