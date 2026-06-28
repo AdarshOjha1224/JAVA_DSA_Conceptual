@@ -46,6 +46,7 @@ public class Queue {
         for(int i=front ; i<size ; i++) {
             System.out.print(arr[i] + " ");
         }
+
         System.out.println();
     }
 
