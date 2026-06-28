@@ -8,11 +8,13 @@ public class Queue {
     private int[] arr = new int[5];
 
     public void enqueue(int data) {
+
         if(!isFull()) {
             rear = (rear + 1) % 5;
             arr[rear] = data;
             size++;
         }
+
         else System.out.println("Queue is FULL !");
     }
 
