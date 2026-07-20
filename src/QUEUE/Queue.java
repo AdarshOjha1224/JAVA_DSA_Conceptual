@@ -29,6 +29,7 @@ public class Queue {
     }
 
     public int peek(){
+
         if(isEmpty()) {
             throw new RuntimeException("Queue is Empty");
         }
@@ -44,11 +45,9 @@ public class Queue {
     }
 
     public void show(){
-
         for(int i=front ; i<size ; i++) {
             System.out.print(arr[i] + " ");
         }
-
         System.out.println();
     }
 
