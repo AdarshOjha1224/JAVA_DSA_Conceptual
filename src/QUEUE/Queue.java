@@ -8,7 +8,6 @@ public class Queue {
     private int[] arr = new int[5];
 
     public void enqueue(int data) {
-
         if(!isFull()) {
             rear = (rear + 1) % 5;
             arr[rear] = data;
@@ -24,7 +23,6 @@ public class Queue {
         if(isEmpty()) {
             throw new RuntimeException("Queue is Empty");
         }
-
         int data = arr[front];
         front = (front + 1) % 5;
         size--;
@@ -37,7 +35,6 @@ public class Queue {
         if(isEmpty()) {
             throw new RuntimeException("Queue is Empty");
         }
-
         return arr[front];
     }
 
@@ -54,7 +51,6 @@ public class Queue {
         for(int i=front ; i<size ; i++) {
             System.out.print(arr[i] + " ");
         }
-
         System.out.println();
     }
 
