@@ -3,16 +3,13 @@ package Linked_List;
 class Node{
     int data ;
     Node next ;
-
     public Node(int data){
         this.data = data ;
         next = null ;
     }
-
 }
 
 public class LinkedList {
-
     Node head = null;
     public void add(int data) {
 
