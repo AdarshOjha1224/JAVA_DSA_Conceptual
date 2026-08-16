@@ -13,6 +13,7 @@ public class Queue {
             arr[rear] = data;
             size++;
         }
+
         else System.out.println("Queue is FULL !");
     }
 
@@ -30,6 +31,7 @@ public class Queue {
         if(isEmpty()) {
             throw new RuntimeException("Queue is Empty");
         }
+
         return arr[front];
     }
 
@@ -45,6 +47,7 @@ public class Queue {
         for(int i=front ; i<size ; i++) {
             System.out.print(arr[i] + " ");
         }
+
         System.out.println();
     }
 
