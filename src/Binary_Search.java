@@ -19,6 +19,7 @@ public class Binary_Search {
         int steps = 0 ;
         int left = 0 ;
         int right = nums.length - 1;
+
         while(left<right){
             steps++;
             int mid = (left+right)/2;
@@ -29,7 +30,9 @@ public class Binary_Search {
             else if(nums[mid]<target) left = mid + 1;
             else right = mid - 1 ;
         }
+
         System.out.println("Steps : " + steps);
+
         return - 1;
     }
 
@@ -38,11 +41,8 @@ public class Binary_Search {
         };
 
         int target = 1067 ;
-
         int result1 = linearSearch(nums,target);
-
         int result2 = binarySearch(nums,target);
-
         if(result1 != -1) System.out.println(result1);
         else System.out.println("Not found !");
 
