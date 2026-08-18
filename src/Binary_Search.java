@@ -38,8 +38,11 @@ public class Binary_Search {
         };
 
         int target = 1067 ;
+
         int result1 = linearSearch(nums,target);
+
         int result2 = binarySearch(nums,target);
+
         if(result1 != -1) System.out.println(result1);
         else System.out.println("Not found !");
 
