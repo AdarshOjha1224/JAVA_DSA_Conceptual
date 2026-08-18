@@ -1,6 +1,7 @@
 public class Binary_Search {
     public static int linearSearch(int[] nums , int target){
         int steps = 0 ;
+
         for(int i = 0 ; i < nums.length ; i++){
             steps++;
             if(nums[i]==target){
@@ -8,7 +9,9 @@ public class Binary_Search {
                 return i ;
             }
         }
+
         System.out.println("Steps : " + steps);
+
         return -1;
     }
 
